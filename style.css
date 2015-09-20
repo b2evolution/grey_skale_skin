@@ -1,0 +1,287 @@
+/** Original Design: Emin Özlem  http://www.cssdizayn.com  (tilqicom@http://forums.b2evolution.net)
+Feel free to distribute
+Start the stylesheet for the grey_skale skin 0.1 fixed version for 800+ res
+
+IMPORTANT NOTICE: 	-webkit-text-size-adjust: none;  iPhone  has been commented out in order to pass validation re-enable if you need it..
+
+*/
+
+/*  = = = = = = = = = = = = = = Begin MAIN STRUCTRE  = = = = = = = = = = = = */
+
+#page {
+border: 1px solid #fff;/* used for outline */
+}
+
+body {
+font-size: 10px;
+font-family: 'Verdana', Arial, Sans-Serif;
+background: #333333;
+color: #666666;
+}
+#header {
+margin: 0 auto;
+clear: both;
+padding: 0;
+height: 200px;
+width: 760px;
+background: #999999 url(img/logo.gif) bottom left no-repeat;
+text-align: center;
+border-bottom: 1px solid #fff;/* used for outline */
+}
+
+#page {
+background-color: black;
+text-align: left;
+margin: 0px auto;
+padding:0;
+width: 760px;}
+
+#content_wrapper {
+width: 760px;
+margin: 0 auto;
+overflow: hidden; }/* in order to equalize Column heights, alternative to the faux columns method*/
+
+#content {
+padding: 10px;
+width: 559px;
+float: left;
+background-color: #E5E5E5;
+border-right: 1px solid #fff;}/* used for outline */
+
+#content_page {width: 96%;background-color: #E5E5E5; margin:0; padding: 2%;}
+
+#index {
+padding: 2%;
+background-color: #E5E5E5;
+width: 96%;
+}
+
+.postcolumn { /*additional class to customize things for content*/
+padding: 0px;
+margin: 0px;
+padding-bottom: 10px;
+
+}
+.sidebar{
+background-color:#ccc;
+float: left;
+width: 160px;
+padding: 10px;
+
+}
+#content, .sidebar {
+padding-bottom: 32767px;/* in order to equalize Column heights, alternative to the faux columns method* which makes approx 30 pages, feel free to increase -decrease the value*/
+margin-bottom: -32767px;/* in order to equalize Column heights, alternative to the faux columns method*/
+}
+.post {text-align: justify; margin-bottom: 40px; border-bottom: 1px dashed #CCCCCC}
+#footer {
+background: #999999;
+clear: both;
+padding: 10px;
+margin: 0 auto;
+width: 740px;
+clear: both;
+color: #ccc;
+text-align: center;
+border-top: 1px solid #fff; /* used for outline */
+
+}
+/* = = = = = = = = = = = = End OF MAIN STRUCTURE  = = = = = = = = = = = = = = = = = = = = = = = =*/
+
+
+/* = = = = = = = = = = = = BEGIN TITLES  = = = = = = = = = = = = = = = = = = = = = = = =*/
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Arial', Verdana, Sans-Serif;
+font-weight: bold;
+}
+h1 {font-size: 340%;text-align: center;}
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.3em;}
+h4, h5, h6 {font-size: 0.8em;}
+/*	custom titles */
+.sidebar h2 {
+font-family: 'Lucida Grande', Verdana, Sans-Serif;
+font-size: 1.2em;
+margin: 5px 0 0;
+padding: 0;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =END OF TITLES = = = = = = = = = = = = = */
+/*links*/
+#skin_wrapper a {color: #000;
+border-bottom: 1px dashed #000;
+text-decoration: none;}
+
+#skin_wrapper a:hover {color: #fff;
+border-bottom: 1px solid #fff;
+}
+
+
+#header, #header a, #footer a {
+border: none;
+color: #fff;}
+
+
+/* must have makeup*/
+.search .SearchField {
+width: 150px;
+}
+
+/* List Styles*/
+.bText ul li, .sidebar ul ul li {list-style-type: square;}
+.sidebar ul, .sidebar ul ol { /*important!*/
+margin: 0;
+padding: 0;
+}
+
+.sidebar ul li { /*each sidebar block*/
+list-style-type: none;
+list-style-image: none;
+margin-bottom: 15px;
+}
+
+.sidebar ul p, .sidebar ul select {
+margin: 5px 0 8px;}
+.sidebar ul ul, .sidebar ul ol {
+margin: 5px 0 0 10px;}
+.sidebar ul ul ul, .sidebar ul ol {
+margin: 0 0 0 10px;}
+ol li, .sidebar ul ol li {
+list-style: decimal outside;}
+.sidebar ul ul li, .sidebar ul ol li {
+margin: 3px 0 0;
+padding: 0;
+}
+/* End Lists */
+
+small {font-family: Arial, Helvetica, Sans-Serif;font-size: 0.9em;line-height: 1em;}/* end must have makeup*/
+.commentlist li, #commentform input, #commentform textarea {
+font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentlist li {
+font-weight: bold;
+}
+
+.commentlist p {
+font-weight: normal;
+line-height: 1.5em;
+text-transform: none;
+}
+
+#commentform p {
+font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+
+
+
+/* Styles for comments */
+div .bComment { /* Entire comment block */
+}
+form.bComment /* New comment form */
+{
+margin: 3ex 0;
+border: 1px solid #999999;
+padding: 5px;
+}
+
+/*Header list styles*/
+div#header ul, div#header .blog_list {float:right;list-style-type:none;margin: 0;padding: 5px;}
+div#header li, div#header .blog_list a {margin: 0;display: inline;padding: 0 1ex 0 0;}
+div#header li a, div#header .blog_list a {
+font-weight: bold;
+font-style:italic;
+color: #fff;
+}
+div#header li a:hover, div#header .blog_list a:hover {
+color: #666;
+text-decoration: underline;
+}
+div#header li a.selected, div#header .blog_list a.selected {
+text-decoration: underline;
+}
+
+/* Top menu */
+div.headnav ul {float:right;padding: 0;list-style-type:none;font-size: 110%;display: inline;}
+.switch {clear:both;float: right; text-align:right;}
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {cursor: help;}
+acronym, abbr {border-bottom: 1px dashed #999;}
+
+blockquote {
+margin: 15px 30px 0 10px;
+padding-left: 20px;
+border-left: 5px solid #ddd;}
+
+.center {text-align: center;}
+hr {display: none;}
+a img {border: none;}
+
+p img {padding: 0;max-width: 100%;}
+
+/*.sidebar a, .sidebar a:hover {border: none;}*/
+div.widget_core_coll_title {padding-top: 20px;	text-align: center;}
+div.widget_core_colls_list_public {padding: 20px; float:right;}
+div.moderation_msg {margin: 1ex 0;}
+div.action_messages {color:#FF0000}
+.postmetadata {clear: both;padding: 5px;}
+.posttags {	clear: both;float:right;color: #777;}
+table.prevnext_post {width: 100%;}
+.alt {
+background-color: #f8f8f8;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+/*calendar*/
+.bCalendarTable a {text-decoration: none;border: none;}
+table.bCalendarTable, table.bCalendarTable th {font-size: 100%;width: 155px;}
+table.bCalendarTable caption {font-size: 130%;}
+#bCalendarToday {border: 1px solid #fff;background-color:#999;color: #E6E6E6;font-weight:bold;}
+#bCalendarToday a {color: #e6e6e6;}
+
+small, .sidebar ul ul li, .sidebar ul ol li, .postmetadata, blockquote, strike {
+color: #777;
+}
+
+code {
+border: 1px solid #999;
+font: 1.1em 'Courier New', Courier, Arial, Verdana;
+padding: 1px;
+}
+
+p code {padding-left: 7px;
+border-left: 5px solid #999;
+}
+
+acronym, abbr, span.caps{font-size: 0.9em;
+letter-spacing: .07em;}
+.sidebar .validators a, .powered_by a, .validators a:hover, .powered_by a:hover {
+border: none;
+}
+.edit_link {
+float: right
+;}
+
+/* v1.1. fixes */
+
+.widget_core_coll_title h1 {
+	text-align: left;
+	margin-left:100px;
+}
+form.bComment .submit, form.bComment .preview, .compact_search_form .submit, #index .extended_search_form .submit {
+	color: #fff;
+	background-color: #666;
+	border-radius: 0px !important;
+	border:1px solid #666 !important;
+	cursor: pointer;
+}
+#index .extended_search_form .submit {
+	margin-left: 3px;
+}
+form.bComment .submit:hover, form.bComment .preview:hover, .compact_search_form .submit:hover, #index .extended_search_form .submit:hover {
+	opacity: 0.8;
+	background-color: #666;
+	color: #fff;
+}
