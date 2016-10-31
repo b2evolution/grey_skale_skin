@@ -4,6 +4,11 @@ Link to skin: http://skins.b2evolution.net/grey-skale-skin
 
 <img src="skinshot.png"/>
 
+#### v1.1.1
+
+- Removed obsolete file
+- New skinshot
+
 #### v1.1.
 
 - Sitewide_header included for easier multi-blogging experience
